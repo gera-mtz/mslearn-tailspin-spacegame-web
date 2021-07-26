@@ -15,10 +15,11 @@ variables:
   buildConfiguration: Release
 steps:
 - task: UseDotNet@2
-  displayName: Use .NET SDK 5.0
+  displayName: Use .NET Core 2.2
   inputs:
-    packageType: sdk
-    version: 5.0.203
+    version: '2.2.x'
+    includePreviewVersions: true
+    performMultiLevelLookup: true
 - task: Npm@1
   displayName: Run npm install
   inputs:
