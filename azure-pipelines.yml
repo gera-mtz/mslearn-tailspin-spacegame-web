@@ -14,7 +14,7 @@ pool:
 variables:
   buildConfiguration: Release
 steps:
-- task: UseDotNet@2
+- task: UseDotNet@3
   displayName: Use .NET SDK 5.0
   inputs:
     packageType: sdk
